@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SobrePage } from '../pages/sobre/sobre';
 import { TutoriaisPage } from '../pages/tutoriais/tutoriais';
+import { ProductsListPage } from '../pages/products-list/products-list';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +29,7 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'Sobre', component: SobrePage},
       { title: 'Tutoriais', component: TutoriaisPage},
+      { title: 'Produtos', component: ProductsListPage}
     ];
 
   }
