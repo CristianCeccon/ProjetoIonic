@@ -8,13 +8,13 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  
+  <ion-list>
+    <ion-item *ngFor="let produto of produtos">
+      <h4>{{produto.nome}}</h4>
+      <p>{{produto.preco}}</p>
+    </ion-item>
+  </ion-list>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will show you the way.
-  </p>
-
-  <!--<ion-item-divider> TESTE IONIC </ion-item-divider>-->
-
-  <button ion-button secondary menuToggle>Acessar</button>
+  <!--<button ion-button secondary menuToggle>Acessar</button>-->
 </ion-content>
